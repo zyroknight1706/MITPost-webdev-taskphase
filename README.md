@@ -14,5 +14,3 @@ This is a website to be used as an advertisement for Lenovo Legion 5 Pro.
 ## Components used:
     1) React.js
     2) styled-components
-
-###### lol
