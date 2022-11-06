@@ -1,4 +1,5 @@
-import Navbar from "./Navbar"
+import React from "react"
+import Navbar from "../Components/Navbar"
 
 const Home = () => {
   return (

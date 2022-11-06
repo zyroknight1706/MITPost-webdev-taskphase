@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import React from "react"
 
 const Container = styled.div`
     height: 60px;
@@ -32,15 +32,31 @@ const Left = styled.div`
 const Logo = styled.div`
     background-color: red;
     font-weight: bold;
-    font-size: 40px;
-    padding: 5px;
+    font-size: 30px;
+    padding: 2px 5px;
 `
 
 const Right = styled.div`
-  flex: 1;
-  align-items: center;
-  display: flex;
-  justify-content: flex-end;
+    flex: 1;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+`
+
+const Button = styled.button`
+    padding 4px 5px;
+    border: 2px solid red;
+    box-shadow: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 1000;
+    transition: .25s ease-in;
+    background-color: #330000;
+    color: white;
+    :hover {
+      background-color: red;
+    }
+
 `
 
 const Navbar = () => {
@@ -48,7 +64,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left><Logo>Lenovo</Logo></Left>
-        <Right>Buy NOW!</Right>
+        <Right><Button><i class="fa-regular fa-cart-shopping"></i> Buy Now!</Button></Right>
       </Wrapper>
     </Container>
   )
