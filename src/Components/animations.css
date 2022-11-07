@@ -1,0 +1,13 @@
+@keyframes image-side {
+    from {
+        transform: translateX(1920);
+    }
+    to {
+        transform: translateX(666);
+    }
+}
+
+.image-side {
+    transition: 1s ease-in;
+    animation: image-side 5s initial;
+}
