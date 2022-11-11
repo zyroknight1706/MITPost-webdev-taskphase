@@ -1,13 +1,12 @@
-@keyframes image-side {
-    from {
-        transform: translateX(1920);
-    }
-    to {
-        transform: translateX(666);
-    }
+.heading {
+    animation: animate 5s linear infinite;
 }
 
-.image-side {
-    transition: 1s ease-in;
-    animation: image-side 5s initial;
+@keyframes animate {
+    0% {
+        background-position: 0%;;
+    }
+    100% {
+        background-position: 400%;
+    }
 }

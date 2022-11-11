@@ -21,7 +21,7 @@ const Video = styled.video`
     z-index: -1;
 `
 
-const Left = styled.div`
+const Article = styled.div`
     display: flex;
     flex: 1;
     align-items: center;
@@ -30,27 +30,18 @@ const Left = styled.div`
 
 const P = styled.p`
     padding: 20px;
-    background-color: rgba(51, 0, 0, 0.5);
+    background-color: rgba(51, 0, 0, 0.75);
     color: white;
+    border-radius: 10px;
 `
 
 const H1 = styled.h1`
-    color: #32f453;
+    font-style: italic;
+    letter-spacing: 6px;
+    background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 `
-
-// const Right = styled.div`
-//     display: flex;
-//     padding: 50px 0px;
-//     flex: 1;
-//     align-items: center;
-//     justify-content: flex-end;
-// `
-
-// const Image = styled.img`
-//     transition: ease-in-out;
-//     animation: image-side 2s initial;
-//     background-color: rgba(0, 0, 0, 0.5);
-// `
 
 const Header = () => {
   return (   
@@ -58,19 +49,16 @@ const Header = () => {
           <Video autoPlay muted loop>
               <source src={ Lenovo } type="video/mp4" />
           </Video>
-          <Left>
+          <Article>
               <P>
-                  <H1>The All New Lenovo Legion 5 Pro!</H1>
+                  <H1 class="heading">The All New Lenovo Legion 5 Pro!</H1>
                   <hr size="5" color="red"/>
                   With it's amazing Ultra-powered RTX graphics card lineup and AMD-powered CPUs, <br />
                   the Legion leaves any and every competition behind. Equipped with 16 gb ram and GDDR6X memory slots, <br />
                   it's even upgradable, making it a hell of a beast. it has 3 NVME slots, coupled with< br /> a powerful SSD and a 
                   really ultra Nvidia RTX 3000 Graphics card, it even has more space!
               </P>
-          </Left>
-          {/* <Right class="image-side">
-            <Image class="image-side" src="https://media.discordapp.net/attachments/796954629304090634/1039067104172843028/lenovo-2-removebg-preview.png" />
-          </Right> */}
+          </Article>
       </Container>
   )
 }
